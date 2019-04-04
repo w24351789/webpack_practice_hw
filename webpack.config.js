@@ -37,9 +37,10 @@ module.exports = {
                     options: {
                         url: false
                     }
+                },{
+                    loader: 'postcss-loader'
                 }]
             })
-            
         },{
             test: /\.(png|woff|woff2|eot|ttf|svg)$/,
             use: {
@@ -56,5 +57,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'assets/index.html'
         })
-    ]
+    ],
+    devServer: {
+       contentBase: 'dist'
+    }
 }
