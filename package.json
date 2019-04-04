@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/w24351789/webpack_practice_hw#readme",
   "dependencies": {
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jquery": "^3.3.1"
   },
   "devDependencies": {
